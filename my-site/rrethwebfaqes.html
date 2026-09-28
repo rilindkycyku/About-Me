@@ -1,42 +1,60 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="sq">
 <head>
-<link rel="stylesheet" href="./assets/css/div.css" />
-<link rel="stylesheet" href="./assets/css/index.css" />
-<link rel="stylesheet" href="./assets/css/butonat.css" />
-<link rel="stylesheet" href="./assets/css/rrethwebfaqes.css" />
-<link rel="stylesheet" href="https://use.typekit.net/ozq1sbg.css">
-<link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/style2.css">
-        <link rel="stylesheet" href="./assets/css/index.css">
-<meta charset="utf-8">
-<title>Rilind Kyçyku | Reth Webfaqes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rilind Kyçyku | Rreth Webfaqes</title>
+	<meta name="description" content="Rreth kësaj webfaqeje: pse u ndërtua, burimet e frymëzimit dhe fonti i përdorur.">
+	<meta name="theme-color" content="#1c2320">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="sq_AL">
+	<meta property="og:title" content="Rilind Kyçyku | Rreth Webfaqes">
+	<meta property="og:description" content="Pse u ndërtua kjo webfaqe dhe çfarë përdor.">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f7a3d'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3ERK%3C/text%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+	<link rel="stylesheet" href="https://use.typekit.net/ozq1sbg.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-	<ul>
-        <li><h3><a id="hd" href="index.html">RK</a></h3></li>
-        <li><a href="index.html">Ballina</a></li>
-        <li><a href="kontakti.html">Kontakti</a></li>
-        <li><a class="active" href="rrethwebfaqes.html">Rreth Webfaqes</a></li>
-    </ul>
-	<h1 class="emri">Rilind Kyçyku</h1>
-	<div id="rrw">
-		<p> Kjo webfaqe është ndërtuar për arsyje që një pjesë të CV-s time ta shfaqi në mënyrë të WEB-it.
-			<br />
-			Disa elemente nga kjo webfaqe jane te bazuara në : 
-				<button id="btn1" >
-					<a href="https://www.w3schools.com/html/default.asp"> W3Schools</a>
-				</button>
-				<button id="btn1" >
-					<a href="https://kk.rks-gov.net/kacanik/staff/besim-ilazi/">Faqen e Komunës së Kaçanikut - Kryetari</a></li>
-				</button>
-			<b>Fonti i përdorur : </b>Open-Sans
-			<br />
-			Fotografit dhe Dokumentat e CSS janë ndarë në skedar të veçantë.
-			<br />
-			Fonti është marrë nga <a href="https://fonts.adobe.com/fonts/open-sans">Adobe Fonts.</a>
-			<br />
-		</p>
-	</div>
+	<a class="skip-link" href="#kryesore">Kalo te përmbajtja</a>
+
+	<header class="site-header">
+		<nav class="nav" aria-label="Navigimi kryesor">
+			<a class="brand" href="index.html" aria-label="Rilind Kyçyku - Ballina">RK</a>
+			<a href="index.html">Ballina</a>
+			<a href="kontakti.html">Kontakti</a>
+			<a href="rrethwebfaqes.html" aria-current="page">Rreth Webfaqes</a>
+		</nav>
+	</header>
+
+	<main id="kryesore">
+		<h1 class="page-title">Rilind Kyçyku</h1>
+
+		<section class="card prose" aria-labelledby="t-rreth">
+			<h2 id="t-rreth">Rreth kësaj webfaqeje</h2>
+			<p>Kjo webfaqe është ndërtuar me qëllim që një pjesë të CV-së sime ta shfaq në formë web.</p>
+			<p>Disa elemente të saj janë të bazuara në:</p>
+			<div class="actions">
+				<a class="btn btn-outline" href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer">W3Schools</a>
+				<a class="btn btn-outline" href="https://kk.rks-gov.net/kacanik/staff/besim-ilazi/" target="_blank" rel="noopener noreferrer">Faqja e Komunës së Kaçanikut - Kryetari</a>
+			</div>
+		</section>
+
+		<section class="card prose" aria-labelledby="t-teknike">
+			<h2 id="t-teknike">Detaje teknike</h2>
+			<ul>
+				<li>Ndërtuar vetëm me <strong>HTML</strong> dhe <strong>CSS</strong>, pa framework.</li>
+				<li>Dizajn responsiv: përshtatet me telefon, tabletë dhe kompjuter.</li>
+				<li>Mbështet modalitetin e errët (dark mode) sipas cilësimeve të pajisjes.</li>
+				<li>Fotografitë dhe dokumentet e CSS janë ndarë në skedarë të veçantë.</li>
+			</ul>
+			<p><strong>Fonti i përdorur:</strong> Open Sans, i marrë nga <a href="https://fonts.adobe.com/fonts/open-sans" target="_blank" rel="noopener noreferrer">Adobe Fonts</a>.</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		&copy; <span id="viti">2024</span> Rilind Kyçyku
+	</footer>
+	<script>document.getElementById("viti").textContent = new Date().getFullYear();</script>
 </body>
 </html>
